@@ -13,8 +13,10 @@ dependencies:
 
 
 
-  chewie:
-  video_player:
+  chewie: ^1.8.5
+  video_player: ^2.9.2
+
+  flutter_hooks: ^0.20.5
 
 
 
