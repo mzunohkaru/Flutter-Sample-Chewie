@@ -9,8 +9,10 @@ class TestPage extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final videoPlayerController = useMemoized(
-      () => VideoPlayerController.network(
-        'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+      () => VideoPlayerController.networkUrl(
+        Uri.parse(
+          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+        ),
       ),
       [],
     );
